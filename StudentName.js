@@ -6,6 +6,7 @@ console.log("EJERCICIO 1")
 let testWord = "esternocleidomastoideo"
 
 function wordCutter(word) {
+<<<<<<< HEAD
     word = word.split("")
     console.log(word)
 
@@ -23,6 +24,10 @@ function wordCutter(word) {
 
 }
 
+=======
+    console.log(testWord.substring(0, 7))
+}
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 wordCutter(testWord)
 
 console.log("////////////////////////////")
@@ -47,9 +52,15 @@ let testWordsList = [
 
 // pruebe para cada palabra A, B y C
 function wordSearcherIgnoreCase(targetWord, wordsList) {
+<<<<<<< HEAD
 
 }
 
+=======
+    
+}
+
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 console.log("////////////////////////////")
 
 /*Dado un arreglo de strings, retornar la palabra más larga,
@@ -70,7 +81,11 @@ let testSampleList = [
 ]
 
 function wordLengthClassifier(wordsList) {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 }
 
 console.log("////////////////////////////")
@@ -144,7 +159,11 @@ let testWordToExplore = "amar"
 let wordsToVerify = ["amar", "arma", "rana", "mara", "rama", "roma", "amor", "ramon", "omar"]
 
 function anagramVerifier(wordToExplore, listOfWords) {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 }
 
 console.log("////////////////////////////")
@@ -159,7 +178,11 @@ let testObjMultiContainer = {
 }
 
 function vocalsRemoverFromObject(objectMultiContainer) {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 }
 
 console.log(vocalsRemoverFromObject(testObjMultiContainer))
@@ -172,7 +195,11 @@ console.log("EJERCICIO 9")
 let someWordsToTest = ["compañeros", "estudiantes", "señores", "amigos", "graduandos", "artistas", "universitarios"]
 
 function lastVocalReplacer(words) {
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
 }
 
 console.log("////////////////////////////")
@@ -186,8 +213,56 @@ let testListA = ["amor", "sabor", "calor", "firma", "mara"]
 let testListB = ["roma", "robar", "portar", "arma", "mora"]
 
 function doubleListVerifier(listA, listB) {
+<<<<<<< HEAD
 
 }
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+=======
+    
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+console.log("EJERCICIO 6");
+
+function numeroVocales(texto) {
+    let contarVocales = 0;
+    let vocales = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    for (let i = 0; i < texto.length; ++i) {
+        if (vocales.indexOf(texto[i]) >= 0) {
+            ++contarVocales;
+        }
+
+    }
+    return contarVocales;
+}
+console.log(numeroVocales('oso'))
+console.log(numeroVocales('lateleletal'))
+console.log(numeroVocales('revolver'))
+console.log(numeroVocales('reconocer'))
+console.log(numeroVocales('somos'))
+console.log(numeroVocales('hola,somos'))
+
+function numeroConsonantes(texto) {
+    let contarConsonantes = 0;
+    let consonantes = ['t', 'g', 'b', 'T', 'G', 'B']
+
+    for (let i = 0; i < texto.length; ++i) {
+        if (consonantes.indexOf(texto[i]) >= 0) {
+            ++contarConsonantes
+        }
+
+    }
+    return contarConsonantes
+}
+console.log(numeroConsonantes('oso'));
+console.log(numeroConsonantes('lateleletal'));
+console.log(numeroConsonantes('revolver'));
+console.log(numeroConsonantes('reconocer'));
+console.log(numeroConsonantes('somos'));
+console.log(numeroConsonantes('hola,somos'));
+>>>>>>> 8230d3c2a1a01b136e8d786310f992ec42d8bf58
