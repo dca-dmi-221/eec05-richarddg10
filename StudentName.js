@@ -6,8 +6,23 @@ console.log("EJERCICIO 1")
 let testWord = "esternocleidomastoideo"
 
 function wordCutter(word) {
-    console.log(testWord.substring(0, 7))
+    word = word.split("")
+    console.log(word)
+
+    let random = word
+        .map(item => ({
+            item,
+            sort: Math.random()
+        }))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({
+            item
+        }) => item)
+
+    console.log(random)
+
 }
+
 wordCutter(testWord)
 
 console.log("////////////////////////////")
@@ -32,7 +47,7 @@ let testWordsList = [
 
 // pruebe para cada palabra A, B y C
 function wordSearcherIgnoreCase(targetWord, wordsList) {
-    
+
 }
 
 console.log("////////////////////////////")
@@ -55,7 +70,7 @@ let testSampleList = [
 ]
 
 function wordLengthClassifier(wordsList) {
-    
+
 }
 
 console.log("////////////////////////////")
@@ -129,7 +144,7 @@ let testWordToExplore = "amar"
 let wordsToVerify = ["amar", "arma", "rana", "mara", "rama", "roma", "amor", "ramon", "omar"]
 
 function anagramVerifier(wordToExplore, listOfWords) {
-    
+
 }
 
 console.log("////////////////////////////")
@@ -144,7 +159,7 @@ let testObjMultiContainer = {
 }
 
 function vocalsRemoverFromObject(objectMultiContainer) {
-    
+
 }
 
 console.log(vocalsRemoverFromObject(testObjMultiContainer))
@@ -157,7 +172,7 @@ console.log("EJERCICIO 9")
 let someWordsToTest = ["compañeros", "estudiantes", "señores", "amigos", "graduandos", "artistas", "universitarios"]
 
 function lastVocalReplacer(words) {
-    
+
 }
 
 console.log("////////////////////////////")
@@ -171,7 +186,7 @@ let testListA = ["amor", "sabor", "calor", "firma", "mara"]
 let testListB = ["roma", "robar", "portar", "arma", "mora"]
 
 function doubleListVerifier(listA, listB) {
-    
+
 }
 
 
