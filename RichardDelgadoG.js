@@ -24,7 +24,7 @@ function wordCutter(word) {
 
 }
 
-wordCutter(testWord)
+console.log(wordCutter(testWord))
 
 console.log("////////////////////////////")
 
@@ -159,14 +159,14 @@ console.log("////////////////////////////")
 /*Dado 2 arreglos de strings retornar un arreglo con todos los strings.*/
 console.log("EJERCICIO 6")
 
-let wordArrayA = ["hola", "¿" ,"cómo", "estás", "?"];
-let wordArrayB = ["te", "ves" ,"igual", "te", "ves", "igual"];
+let arrayA = ["hola", "¿" ,"cómo", "estás", "?"];
+let arrayB = ["te", "ves" ,"igual", "te", "ves", "igual"];
 
 function arrayJoiner(listA, listB) {
     const lists = listA.concat(listB)
     console.log(lists)
 }
-arrayJoiner(wordArrayA, wordArrayB)
+arrayJoiner(arrayA, arrayB)
 
 console.log("////////////////////////////")
 
@@ -192,6 +192,19 @@ let testObjMultiContainer = {
 }
 
 function vocalsRemoverFromObject(objectMultiContainer) {
+    let ambos = objectMultiContainer.listA.concat(objectMultiContainer.listB)
+    const resultado = []
+
+    for (let i = 0; i < ambos.length; i++) {
+        const palabra = ambos[i].split('')
+        for (let index = 0; index < ambos[i].length; index++) {
+            if (palabra[index] === "a" || palabra[index] === "e" || palabra[index] === "i" || palabra[index] === "o" || palabra[index] === "u") {
+                palabra.splice(index, 1)
+            }
+        }
+        resultado.push(palabra.join(''))
+    }
+    console.log(resultado)
 }
 
 console.log(vocalsRemoverFromObject(testObjMultiContainer))
@@ -223,7 +236,7 @@ function doubleListVerifier(listA, listB) {
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-console.log("EJERCICIO 6 segunda opción");
+console.log("EJERCICIO 5 segunda opción");
 
 function numeroVocales(texto) {
     let contarVocales = 0;
